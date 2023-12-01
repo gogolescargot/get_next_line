@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ggalon <ggalon@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/23 17:45:53 by ggalon            #+#    #+#             */
-/*   Updated: 2023/11/23 17:45:53 by ggalon           ###   ########.fr       */
+/*   Created: 2023/12/01 22:43:56 by ggalon            #+#    #+#             */
+/*   Updated: 2023/12/01 22:43:56 by ggalon           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 void	ft_clear_stash(char **stash)
 {
@@ -58,7 +58,7 @@ char	*ft_get_line(char **stash)
 
 char	*get_next_line(int fd)
 {
-	static char	*stash[__FD_SETSIZE];
+	static char	*stash[4096];
 	char		*buffer;
 	int			readc;
 
