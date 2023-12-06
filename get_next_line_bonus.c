@@ -58,7 +58,7 @@ char	*ft_get_line(char **stash)
 
 char	*get_next_line(int fd)
 {
-	static char	*stash[4096];
+	static char	*stash[1024];
 	char		*buffer;
 	int			readc;
 
